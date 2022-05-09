@@ -1,4 +1,4 @@
-# Classe para calculo de tarifa de ligação com plano e sem plano
+# Tarifação de ligação com plano e sem plano
 
 - O primeiro parametro é a origem da ligação.
 - O segundo parametro é o destino da ligação.
