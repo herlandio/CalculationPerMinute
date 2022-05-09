@@ -10,7 +10,7 @@
 (new PlanTalkMore('018', '011', 200, 120));
 ```
 
-- O valor da tarifa por minuto esta identificado por priceForMinute.
+- O valor da tarifa por minuto esta identificado como priceForMinute.
 - A origem esta identificado como origin.
 - O destino esta identificado como destiny.
 
