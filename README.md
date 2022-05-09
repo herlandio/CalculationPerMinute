@@ -1,4 +1,4 @@
-# Tarifação de ligação com ou sem plano
+# Tarifação de ligação com ou sem plano.
 
 - O primeiro parametro é a origem da ligação.
 - O segundo parametro é o destino da ligação.
