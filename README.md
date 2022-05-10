@@ -1,5 +1,11 @@
 # Tarifação de ligação com ou sem plano.
 
+- Para baixar o script abra seu terminal e execute o comando abaixo.
+
+```
+git clone https://github.com/herlandio/Call-Pricing
+```
+
 - O primeiro parametro é a origem da ligação.
 - O segundo parametro é o destino da ligação.
 - O terceiro parametro é o total de minutos falados.
