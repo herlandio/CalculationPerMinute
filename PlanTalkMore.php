@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Utilização permitida, apenas deixar os créditos.
+*/
+
 class PlanTalkMore {
     
     /**
