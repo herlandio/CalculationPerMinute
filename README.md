@@ -55,8 +55,17 @@ return [
       ];
 ```
 
-- A execução da classe basicamente é:
+- Acesse a pasta Call-Pricing e construa a imagem docker com o comando abaixo:
 
 ```
-  php PlanTalkMore.php
+docker build -t plantalkmore:v1 .
+```
+- Inicie o container
+```
+docker run -it -d plantalkmore:v1
+```
+- Use docker ps para ver o CONTAINER_ID
+- Use o comando abaixo para ver o resultado do script
+```
+docker exec -it CONTAINER_ID php PlanTalkMore.php
 ```
