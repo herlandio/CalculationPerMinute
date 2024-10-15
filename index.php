@@ -1,7 +1,9 @@
 <?php
 declare(strict_types=1);
 
-use Service\PlanTalkMore;
+require_once './vendor/autoload.php';
+
+use Src\PlanTalkMore;
 
 if ($argc !== 5) {
     echo "Usage: php PlanTalkMore.php <origin> <destiny> <time> <plan>\n";

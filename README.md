@@ -67,7 +67,7 @@ docker run --rm \
   -e DESTINY='011' \
   -e TIME=200 \
   -e PLAN=120 \
-  plantalkmore
+  plantalkmore:v1
 ```
 Explicação do Comando
 
@@ -84,3 +84,9 @@ docker run --rm: Executa um novo container e remove-o após a execução.
 plantalkmore: O nome da imagem Docker que você criou.
 
 Ao executar esse comando, o script PHP PlanTalkMore.php será executado dentro do container, usando os valores fornecidos nas variáveis de ambiente.
+
+Para executar os testes:
+
+```
+docker run --rm -it plantalkmore:v1 ./vendor/bin/phpunit tests
+```
