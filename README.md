@@ -55,7 +55,7 @@ return [
       ];
 ```
 
-- Acesse a pasta Call-Pricing e construa a imagem docker com o comando abaixo:
+- Acesse a pasta call-pricing e construa a imagem docker com o comando abaixo:
 
 ```
 docker build -t plantalkmore:v1 .
