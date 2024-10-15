@@ -60,12 +60,27 @@ return [
 ```
 docker build -t plantalkmore:v1 .
 ```
-- Inicie o container
+- "Use o comando abaixo para ver o resultado do script, fornecendo os valores dos parâmetros via variáveis de ambiente, como no exemplo abaixo:"
 ```
-docker run -it -d plantalkmore:v1
+docker run --rm \
+  -e ORIGIN='018' \
+  -e DESTINY='011' \
+  -e TIME=200 \
+  -e PLAN=120 \
+  plantalkmore
 ```
-- Use docker ps para ver o CONTAINER_ID
-- Use o comando abaixo para ver o resultado do script
-```
-docker exec -it CONTAINER_ID php PlanTalkMore.php
-```
+Explicação do Comando
+
+docker run --rm: Executa um novo container e remove-o após a execução.
+
+-e ORIGIN='018': Define a variável de ambiente ORIGIN com o valor 018.
+
+-e DESTINY='011': Define a variável de ambiente DESTINY com o valor 011.
+
+-e TIME=200: Define a variável de ambiente TIME com o valor 200.
+
+-e PLAN=120: Define a variável de ambiente PLAN com o valor 120.
+
+plantalkmore: O nome da imagem Docker que você criou.
+
+Ao executar esse comando, o script PHP PlanTalkMore.php será executado dentro do container, usando os valores fornecidos nas variáveis de ambiente.
